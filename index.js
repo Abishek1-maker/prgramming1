@@ -11,7 +11,7 @@ Form.addEventListener('submit', (event)=> {
 function SubmitData(event){
   event.preventDefault();
 
-  //Get DOm Element
+  //Get DOM Element
   const nameField=document.getElementById('name')
   const nameValue=nameField.value
 
@@ -34,14 +34,14 @@ const ageField=document.getElementById('age')
 const ageValue=ageField.value
 
 const guardianField=document.getElementById('guardian_number')
-const guardianValue=guardianField.value
+ const guardianValue=guardianField.value
 
 
 
 
 
 
-  localStorage.setItem('Student', JSON.stringify({
+    localStorage.setItem('Student', JSON.stringify({
     Name: nameValue,
     Email_address: emailValue,
     Phone_number: phValue,
